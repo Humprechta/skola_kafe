@@ -125,21 +125,23 @@ $mysql = "SELECT people.id as id, name, count(drinks.id) as pocet from people in
         $cena = 0;
         switch ($typ) {
             case 'Mléko':
-                $cena = $pocet * 40 / 10;
+                $cena = ($pocet * 40) / 20;
                 break;
+                
             case 'Espresso':
-                $cena = $pocet * 300 / 142.9;
+                $cena = ($pocet * 300) / 142.9;
                 break;
+
             case 'Coffe':
-                $cena = $pocet * 300 / 72.4;
+                $cena = ($pocet * 300) / 72.4;
                 break;
         
             case 'Long':
-                $cena = $pocet * 300 / 72.4;
+                $cena = ($pocet * 300) / 72.4;
                 break;
     
             case 'Doppio+':
-                $cena = $pocet * 300 / 47.6;
+                $cena = ($pocet * 300) / 47.6;
                 break;
             
             default:

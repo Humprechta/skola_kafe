@@ -3,7 +3,7 @@
 				//$servername = "localhost";
                 define("servername","localhost");
 				$username = "admin";
-				$password = "";
+				$password = "admin12345678";
 				$db = "import";
 
 
